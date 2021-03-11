@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2?family=Ravi+Prakash&display=swap');
+
+.title {
+    margin: 0 auto;
+    text-align: center;
+    text-transform: capitalize;
+    font-family: 'Ravi Prakash', cursive;
+}
+
+.description {
+    margin: 10px auto 0;
+    text-align: center;
+    font-family: 'Ravi Prakash', cursive;
+}
+
+.collapse-container {
+    padding: 20px;
+    width: 500px;
+    height: 140px;
+    box-sizing: border-box;
+    margin: 20px auto 0;
+    background-color: rgb(136, 177, 204);
+    overflow: hidden;
+}
+
+button {
+    cursor: pointer;
+}
+
+.collapse-container-anim-normal {
+    animation-name: collapse-container-anim-normal;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes collapse-container-anim-normal {
+    0% {
+        height: 140px;
+    }
+    100% {
+        height: 280px;
+    }
+}
+
+.collapse-container-anim-reverse {
+    animation-name: collapse-container-anim-reverse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes collapse-container-anim-reverse {
+    0% {
+        height: 280px;
+    }
+    100% {
+        height: 140px;
+    }
+}
+
+.collapse-button {
+    font-family: 'Ravi Prakash', cursive;
+    background-color: rgb(0, 105, 217);
+    color: bisque;
+    width: 100px;
+    height: 30px;
+    border: none;
+    border-radius: 10px;
+    margin-top: 5px;
+}
+
+.collapse-button:focus {
+    outline: none;
+    border: 2px solid wheat;
+}
+
+.content {
+    font-family: 'Ravi Prakash', cursive;
+    font-size: 0.9rem;
+    border: 1px solid rgb(191, 191, 240);
+    background-color: white;
+    padding: 10px;
+    width: 450px;
+    height: 110px;
+    box-sizing: border-box;
+    margin: 20px auto 0;
+    box-sizing: border-box;
+}
+
+.copy {
+    margin-top: 2px;
+    margin-left: calc(100vw / 2 + 200px);
+    font-family: 'Ravi Prakash', cursive;
+    font-size: 1.5rem;
+}
+
+.chat-container {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 300px;
+    height: 410px;
+    box-sizing: border-box;
+    margin: 20px auto 0;
+    position: relative;
+}
+
+.chat-container-form {
+    box-sizing: border-box;
+    width: 250px;
+    height: 250px;
+    box-shadow: 0 0 5px 6px rgb(188, 213, 236);
+    padding: 10px;
+    margin: 10px 0 0 0;
+    transform: scale(0, 0);
+}
+
+.chat-container-form-expand {
+    animation-name: chat-container-form-expand;
+    animation-duration: 100ms;
+    animation-delay: 100ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes chat-container-form-expand {
+    100%{transform: scale(1, 1)};
+}
+
+.chat-container-form-squeeze {
+    animation-name: chat-container-form-squeeze;
+    animation-duration: 100ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: scale(1, 1);
+}
+
+@keyframes chat-container-form-squeeze {
+    100%{transform: scale(0, 0)};
+}
+
+.chat-title {
+    text-align: center;
+    text-transform: uppercase;
+    margin-bottom: 0;
+    font-family: 'Ravi Prakash', cursive;
+}
+
+.chat-button-close {
+    border: none;
+    background-color: transparent;
+    margin: 0 0 0 90%;
+    padding: 0;
+    font-size: 1.5rem;
+    font-weight: 500;
+}
+
+.chat-button-close:focus {
+    outline: none;
+}
+
+.chat-form-box {
+    width: 100%;
+}
+
+textarea {
+    display: block;
+    margin: 0 auto;
+    width: 90%;
+    height: 100px;
+}
+
+.chat-button-send {
+    display: block;
+    margin: 5px auto 0;
+    width: 90%;
+    height: 35px;
+    border: none;
+    border-radius: 10px;
+    background-color: cornflowerblue;
+    font-family: 'Ravi Prakash', cursive;
+    font-size: 1.5rem;
+}
+
+.chat-button-cycle {
+    border: none;
+    border-radius: 50%;
+    background-color: red;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    top: calc(100% - 50px);
+    left: calc(100% - 50px);
+}
+
+.chat-button-cycle:focus {
+    outline: none;
+}
+
+.chat-button-cycle-squeeze {
+    animation-name: chat-button-cycle-squeeze;
+    animation-duration: 100ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes chat-button-cycle-squeeze {
+    100%{transform: scale(0, 0)};
+}
+
+
+.chat-button-cycle-expand {
+    animation-name: chat-button-cycle-expand;
+    animation-duration: 100ms;
+    animation-delay: 100ms;
+    animation-timing-function: linear;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    transform: scale(0, 0);
+}
+
+@keyframes chat-button-cycle-expand {
+    100%{transform: scale(1, 1)};
+}
+
+.liker-container {
+    box-sizing: border-box;
+    padding: 20px;
+    width: 300px;
+    height: 100px;
+    box-sizing: border-box;
+    margin: 50px auto 0;
+    position: relative;
+}
+
+.liker-button {
+    text-transform: uppercase;
+    font-family: 'Ravi Prakash', cursive;
+    display: block;
+    width: 150px;
+    height: 50px;
+    background-color: red;
+    border-radius: 10px;
+    color: rosybrown;
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px auto 0;
+}
+
+.liker-button:focus {
+    outline: none;
+}
+
+.like {
+    height: 30px;
+    width: 30px;
+    top: 70px;
+    left: 135px;
+    background-image: url(/src/img/heart.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    position: absolute;
+}
+
+.like-transition-first {
+    animation-name: like-transition-first;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes like-transition-first {
+    0%{transform: translate(0px, 0px)};
+    25%{transform: translate(-50px, -50px)}
+    50%{transform: translate(0px, -100px)}
+    50%{transform: translate(50px, -150px)}
+    100%{transform: translate(0px, -200px)};
+}
+
+.like-transition-second {
+    animation-name: like-transition-second;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes like-transition-second {
+    0%{transform: translate(0px, 0px)};
+    25%{transform: translate(0px, -50px)}
+    50%{transform: translate(50px, -100px)}
+    50%{transform: translate(-50px, -150px)}
+    100%{transform: translate(0px, -200px)};
+}
+
+.like-transition-third {
+    animation-name: like-transition-third;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes like-transition-third {
+    0%{transform: translate(0px, 0px)};
+    25%{transform: translate(0px, -50px)}
+    50%{transform: translate(-50px, -100px)}
+    50%{transform: translate(50px, -150px)}
+    100%{transform: translate(0px, -200px)};
+}
+
+.like-transition-fourth {
+    animation-name: like-transition-fourth;
+    animation-duration: 500ms;
+    animation-timing-function: ease-out;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+}
+
+@keyframes like-transition-fourth {
+    0%{transform: translate(0px, 0px)};
+    25%{transform: translate(50px, -50px)}
+    50%{transform: translate(0px, -100px)}
+    50%{transform: translate(-50px, -150px)}
+    100%{transform: translate(0px, -200px)};
+}
